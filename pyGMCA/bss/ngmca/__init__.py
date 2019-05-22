@@ -41,7 +41,7 @@
 # __license__ = "CeCill"
 #
 
-import base
-import core
-import proximal
-import munkres
+from . import base
+from . import core
+from . import proximal
+from . import munkres

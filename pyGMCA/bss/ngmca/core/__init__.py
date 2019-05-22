@@ -41,6 +41,6 @@
 # __license__ = "CeCill"
 #
 
-import algorithm
-from algorithm import Algorithm
-import tools
+from . import algorithm
+from .algorithm import Algorithm
+from . import tools

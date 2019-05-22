@@ -40,9 +40,9 @@
 # __copyright__ = "(c) 2014 CEA"
 # __license__ = "CeCill"
 
-import standard
-import framework
-import updaters
-from standard import Ngmca
-from framework import Framework
-from updaters import SparseUpdater, RedWaveUpdater
+from . import standard
+from . import framework
+from . import updaters
+from .standard import Ngmca
+from .framework import Framework
+from .updaters import SparseUpdater, RedWaveUpdater

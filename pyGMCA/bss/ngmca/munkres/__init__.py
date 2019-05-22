@@ -42,4 +42,4 @@
 #
 #
 
-import munkres
+from . import munkres

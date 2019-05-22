@@ -40,8 +40,8 @@
 # __copyright__ = "(c) 2017 CEA"
 # __license__ = "CeCill"
 
-import amca
-import gmca
-import rgmca
-import tr_rgmca
-import ngmca
+from . import amca
+from . import gmca
+from . import rgmca
+from . import tr_rgmca
+from . import ngmca

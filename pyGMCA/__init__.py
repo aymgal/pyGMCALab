@@ -40,5 +40,5 @@
 # __copyright__ = "(c) 2017 CEA"
 # __license__ = "CeCill"
 
-import common
-import bss
+from . import common
+from . import bss
