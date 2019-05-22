@@ -42,7 +42,10 @@
 # __license__ = "CeCill"
 
 from pyGMCA.bss.ngmca.core.tools import fill_parameters
-from PyQt4.QtGui import QApplication
+try:
+    from PyQt5.QtGui import QApplication
+except ImportError:
+    from PyQt4.QtGui import QApplication
 from gc import collect
 from matplotlib import pyplot
 from numpy import NaN, ones, isscalar, ndarray, linalg, finfo

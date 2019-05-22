@@ -45,10 +45,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import scipy.ndimage
-from pyGMCA import core, proximal
-from pyGMCA.munkres import munkres
+try:
+    from pyGMCA import core, proximal
+except ImportError:
+    from pyGMCA.bss.ngmca import core, proximal
+try:
+    from pyGMCA.munkres import munkres
+except ImportError:
+    from pyGMCA.bss.ngmca.munkres import munkres
 from scipy import linalg, misc
-from pyGMCA.bss import sample_nmr_spectra
+try:
+    from pyGMCA.bss import sample_nmr_spectra
+except ImportError:
+    from pyGMCA.bss.ngmca.tools import sample_nmr_spectra
 
 # import pdb
 

@@ -42,5 +42,5 @@
 #
 
 from . import algorithm
-from .algorithm import Algorithm
+from .algorithm import Algorithm 
 from . import tools
